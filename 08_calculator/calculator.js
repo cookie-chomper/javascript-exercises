@@ -22,7 +22,11 @@ const multiply = function(someArray) {
     return result;
 };
 
-const power = function() {
+const power = function(x, n) {
+    if (n > 1) {
+        x = x * power(x, n - 1)
+    }
+    return x;
 	
 };
 
