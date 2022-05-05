@@ -30,7 +30,14 @@ const power = function(x, n) {
 	
 };
 
-const factorial = function() {
+const factorial = function(f) {
+    let result = 1;
+    if (f === 0 || f === 1) return 1;
+    for (let i = 1; i <= f; i++) {
+        result = result * i;
+    }
+    return result;
+    
 	
 };
 
